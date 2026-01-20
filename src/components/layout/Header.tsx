@@ -22,7 +22,7 @@ import peimaLogo from "../../assets/peima-logo.png";
 const navItems = [
   { name: "Home", path: "/", icon: Home },
   {
-    name: "About Us",
+    name: "About",
     path: "/about",
     icon: Info,
     submenu: [
@@ -96,7 +96,7 @@ export function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-6">
+            <nav className="hidden lg:flex items-center gap-2">
               {navItems.map((item) => (
                 <div
                   key={item.name}
@@ -106,7 +106,7 @@ export function Header() {
                 >
                   <Link
                     to={item.path}
-                    className={`flex flex-col items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-all duration-300 group-hover:text-peima-gold ${location.pathname === item.path
+                    className={`flex flex-col items-center gap-1 px-2 py-2 text-sm font-medium rounded-lg transition-all duration-300 group-hover:text-peima-gold ${location.pathname === item.path
                       ? "text-primary"
                       : "text-foreground"
                       }`}
