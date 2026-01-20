@@ -81,14 +81,14 @@ export function Header() {
     <>
       {/* Main Header */}
       <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "glass shadow-peima-md py-2" : "bg-white py-4"
+        className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "glass shadow-peima-md py-2" : "bg-white py-2"
           }`}
       >
         <div className="w-full px-4 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3">
-              <img src={peimaLogo} alt="PEIMA Logo" className="h-20 w-auto object-contain rounded-full" />
+            <Link to="/" className="flex items-center gap-3 ml-1">
+              <img src={peimaLogo} alt="PEIMA Logo" className="h-16 w-auto object-contain rounded-full" />
               <div className="hidden sm:block">
                 <h1 className="text-3xl font-bold text-primary leading-tight">PEIMA</h1>
                 <p className="text-xs sm:text-sm font-medium text-primary/80 leading-none tracking-wide">Punjab Education Initiative Management Authority</p>
