@@ -122,10 +122,10 @@ export function HeroSection() {
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
           >
             {[
-              { value: "1000+", label: "Schools Managed" },
-              { value: "500K+", label: "Students Enrolled" },
-              { value: "15K+", label: "Teachers Trained" },
-              { value: "36", label: "Districts Covered" },
+              { value: "4276+", label: "Schools Managed" },
+              { value: "590820+", label: "Students Enrolled" },
+              { value: "21095", label: "Teachers Trained" },
+              { value: "41", label: "Districts Covered" },
             ].map((stat, index) => (
               <div
                 key={index}
